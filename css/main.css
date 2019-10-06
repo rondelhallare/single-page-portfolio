@@ -1,0 +1,255 @@
+html {
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    top: 0;
+    right: 0;
+}
+.portfolio-hero {
+    background: url(../img/kaws.jpg) no-repeat center center fixed;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    color:black;
+}
+.portfolio-menu ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 1.50rem;    
+}
+.portfolio-menu ul li {
+    margin: 0px 10px;
+    list-style: none;
+}
+.portfolio-menu .menu-item a{
+    color:black;
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+}
+.portfolio-profile {
+      width: 650px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+.portfolio-profile img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.portfolio-profile h1 {
+    font-weight: 300;
+    margin: 10px;
+    font-size: 3.2rem;
+    color: black;
+}
+.portfolio-profile h2 {
+    background-color: transparent; 
+    font-weight: 300;
+    margin: 0px;
+    font-size: 2.3rem;
+    color: black;
+}
+
+/* MAIN */
+main {
+    font-size: 1.5rem;
+    margin: 0.1px;
+    padding: 0.1px;
+    text-align: center;
+    color: black;
+    text-decoration: none; 
+}
+#About {
+    font-size: 2.5rem;
+    margin: 0px;
+    padding: 0px;
+    color: black;   
+}
+#About h2{
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.5rem;
+}
+#About p {
+    border-style: solid;
+    background-color: darkgray;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#skills {
+    color: black;
+    background-color: gray;
+    
+}
+#skills h2 {
+    font-size: 2.5rem;
+    margin: 20px 0px;
+}
+#skills h3 {
+    text-decoration: underline;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.skill-main-grid {
+    text-align: center;
+    border-style: solid;
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.skill-grid1 {
+    border-style: solid;
+    margin:10px;
+}
+.skill-grid2 {
+    border-style: solid;
+    margin:10px;
+}
+.skill-grid3 {
+    border-style: solid;
+    margin:10px;
+}
+.skill-grid4 {
+    border-style: solid;
+    margin:10px;
+}
+.skill-main-grid h2 {
+    background-color: gray;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+h2{
+    border-style: solid;
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+}
+.portfolio-form {
+    background-color: gray;
+    margin: 0.1px;
+    padding: 0.1px;
+}
+.form-label {
+    padding: 10px 0px;
+    font-size: 1.3rem;
+}
+.form-input input{
+    width: 50%;
+    height: 50%;
+    padding: 7px 0px;
+    border-radius: 8px;
+    border-color: purple;
+}
+.form-input input:focus {
+    transition: .7s;
+    outline: 0;
+   
+}
+.form-input-textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    width: 60%;
+    padding: 7px 0px;
+    height: 150px;
+    border-color: purple;
+}
+.form-input-textarea textarea:focus {
+    transition:.7s;
+    outline: 0;
+    border-color: purple;
+    
+}
+.form-submit {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+.btn-submit {
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    height: 50%;
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+}
+footer {
+    border-style: solid;
+    color: black;
+    text-align: center;
+    background-color: darkgray;
+    margin: 0px;
+    padding: 20px;
+}
+
+
+/*Moibile Responsive*/
+@media screen and (max-width: 812px){
+
+ html, body {
+     width: 100%;
+     overflow-x: hidden;
+     position: sticky;
+ }
+ .portfolio-hero {
+   display: inline-block;
+   width: 100%;
+   position: sticky;
+}
+.portfolio-menu ul {
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-top: 15px;
+    font-size: 1rem;    
+    position: sticky;
+}
+.portfolio-profile {
+    height: 35vmin;
+    width: 90vmax;
+    left:50%;
+    position: absolute;
+    top:0%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+.portfolio-hero img {
+    height: 55vmin;
+    width: 50vmin;
+    border-radius: 50%;
+}
+.portfolio-profile h1 {
+    font-size: 7vmin;
+    margin: 15px;
+}
+.portfolio-profile h2 {
+    margin:0px;
+    font-size: 7vmin;
+    position: sticky;
+}
+.skill-main-grid {
+    grid-template-columns: none;
+    text-align: center;
+    position: sticky;
+   
+}
+.skill-main-grid h2 {
+    position: sticky;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+}
