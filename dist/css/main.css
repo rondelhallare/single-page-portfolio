@@ -5,7 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    margin: 0px;
+    margin: 0;
     top: 0;
     right: 0;
 }
@@ -34,8 +34,8 @@ body {
     
 }
 .portfolio-profile {
-    width: 650px;
-    height: 200px;
+      width: 650px;
+    height: 400px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -78,20 +78,21 @@ main {
 #About h2{
     background-color: gray;
     margin: 0px;
+    padding: 0px;
     font-size: 2.5rem;
 }
 #About p {
     border-style: solid;
     background-color: darkgray;
-    padding: 0.1px;
-    margin:0.1px;
+    padding: 0px;
+    margin: 0px;
     font-size: 1.5rem;
     font-weight: 300;
 }
 #skills {
     color: black;
     background-color: gray;
-    padding-top: 15px;
+    
 }
 #skills h2 {
     font-size: 2.5rem;
@@ -131,14 +132,15 @@ main {
     text-decoration: underline;
 }
 h2{
+    border-style: solid;
     background-color: gray;
-    margin: 0.1px;
-    padding: 0.1px;
+    margin: 0px;
+    padding: 0px;
 }
 .portfolio-form {
     background-color: gray;
-    margin: 0.3px;
-    padding:0.3px;
+    margin: 0.1px;
+    padding: 0.1px;
 }
 .form-label {
     padding: 10px 0px;
@@ -149,40 +151,105 @@ h2{
     height: 50%;
     padding: 7px 0px;
     border-radius: 8px;
+    border-color: purple;
 }
 .form-input input:focus {
     transition: .7s;
-    border-color: blue;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0,123,225,25);
+   
 }
 .form-input-textarea {
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
-    width: 80%;
+    width: 60%;
     padding: 7px 0px;
-    height: 200px;
+    height: 150px;
+    border-color: purple;
 }
 .form-input-textarea textarea:focus {
     transition:.7s;
-    border-color: blue;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0,123,225,25);
+    border-color: purple;
+    
 }
 .form-submit {
+    margin-bottom: 20px;
     margin-top: 5px;
     text-align: center;
+    position: relative;
+    top: 10px;
 }
 .btn-submit {
     padding: 5px 15px;
+    font-size: 1.5rem;
+    height: 50%;
     text-decoration: none;
     color: white;
-    background-color: darkslategray;
+    background-color: purple;
 }
 footer {
+    border-style: solid;
     color: black;
     text-align: center;
     background-color: darkgray;
-    margin: 1px;
-    padding: 10px;
+    margin: 0px;
+    padding: 20px;
+}
+
+
+/*Moibile Responsive*/
+@media screen and (max-width: 812px){
+
+ html, body {
+     width: 100%;
+     overflow-x: hidden;
+     position: sticky;
+ }
+ .portfolio-hero {
+   display: inline-block;
+   width: 100%;
+   position: sticky;
+}
+.portfolio-menu ul {
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-top: 15px;
+    font-size: 1rem;    
+    position: sticky;
+}
+.portfolio-profile {
+    height: 35vmin;
+    width: 90vmax;
+    left:50%;
+    position: absolute;
+    top:0%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+.portfolio-hero img {
+    height: 55vmin;
+    width: 50vmin;
+    border-radius: 50%;
+}
+.portfolio-profile h1 {
+    font-size: 7vmin;
+    margin: 15px;
+}
+.portfolio-profile h2 {
+    margin:0px;
+    font-size: 7vmin;
+    position: sticky;
+}
+.skill-main-grid {
+    grid-template-columns: none;
+    text-align: center;
+    position: sticky;
+   
+}
+.skill-main-grid h2 {
+    position: sticky;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
 }
